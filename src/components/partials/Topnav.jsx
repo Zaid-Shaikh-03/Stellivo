@@ -39,11 +39,11 @@ const Topnav = () => {
         ></i>
       )}
 
-      <div className="w-[45%] max-h-[50vh] bg-red-200 absolute top-[100%] left-[20%] overflow-auto rounded">
+      <div className="w-[45%] max-h-[50vh] bg-[#040B29] absolute top-[100%] left-[20%] overflow-auto rounded">
         {searches.map((s, i) => (
           <Link
             key={i}
-            className="hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600 w-[100%] p-10 flex justify-start items-center border-b-2 border-zinc-100"
+            className="hover:text-white hover:bg-[#040B39] duration-300 font-semibold text-zinc-300 w-[100%] p-5 flex justify-start items-center border-b-2 border-zinc-500"
           >
             <img
               className="h-[10vh] w-[10vh] object-cover rounded mr-5 shadow-lg"
