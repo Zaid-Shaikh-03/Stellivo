@@ -39,7 +39,7 @@ const Topnav = () => {
         ></i>
       )}
 
-      <div className="w-[50%] max-h-[50vh] bg-red-200 absolute top-[90%] overflow-auto rounded">
+      <div className="w-[45%] max-h-[50vh] bg-red-200 absolute top-[100%] left-[20%] overflow-auto rounded">
         {searches.map((s, i) => (
           <Link
             key={i}
