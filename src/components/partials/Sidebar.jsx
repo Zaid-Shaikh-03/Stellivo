@@ -18,7 +18,10 @@ const Sidebar = () => {
           <i class="ri-fire-fill mr-2"></i>
           Trending
         </Link>
-        <Link className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300">
+        <Link
+          to="/popular"
+          className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300"
+        >
           <i class="ri-bard-fill mr-2"></i>
           Popular
         </Link>
