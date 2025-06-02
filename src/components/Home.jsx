@@ -5,6 +5,7 @@ import Topnav from "./partials/Topnav";
 import Header from "./partials/Header";
 import HorizontalCards from "./partials/HorizontalCards";
 import Dropdown from "./partials/Dropdown";
+import Loader from "./Loader";
 
 const Home = () => {
   const [wallpaper, setWallpaper] = useState(null);
@@ -46,7 +47,7 @@ const Home = () => {
           <h1 className="text-3xl font-semibold text-zinc-400">Trending</h1>
           <Dropdown
             title="filter"
-            options={["tv shows", "movie", "all"]}
+            options={["tv", "movie", "all"]}
             func={(e) => setCategory(e.target.value)}
           />
         </div>
@@ -54,7 +55,7 @@ const Home = () => {
       </div>
     </>
   ) : (
-    <h1 className="text-white">Loading</h1>
+    <Loader />
   );
 };
 
