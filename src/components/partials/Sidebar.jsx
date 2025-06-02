@@ -25,11 +25,17 @@ const Sidebar = () => {
           <i class="ri-bard-fill mr-2"></i>
           Popular
         </Link>
-        <Link className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300">
+        <Link
+          to="/movies"
+          className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300"
+        >
           <i class="ri-movie-2-line mr-2"></i>
           Movies
         </Link>
-        <Link className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300">
+        <Link
+          to="/tvShows"
+          className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300"
+        >
           <i class="ri-tv-fill mr-2"></i>
           Tv show
         </Link>
