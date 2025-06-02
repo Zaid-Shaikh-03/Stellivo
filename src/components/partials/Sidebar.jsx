@@ -39,7 +39,10 @@ const Sidebar = () => {
           <i class="ri-tv-fill mr-2"></i>
           Tv show
         </Link>
-        <Link className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300">
+        <Link
+          to="/people"
+          className="hover:bg-[#483AA0] hover:text-white p-3 rounded-lg duration-300"
+        >
           <i class="ri-team-fill mr-2"></i>
           People
         </Link>
