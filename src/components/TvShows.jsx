@@ -69,7 +69,7 @@ const TvShows = () => {
         next={GetTvShows}
         hasMore={hasMore}
       >
-        <Cards data={tvShows} title={category} />
+        <Cards data={tvShows} title="tv" />
       </InfiniteScroll>
     </div>
   ) : (
