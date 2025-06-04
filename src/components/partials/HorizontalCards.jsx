@@ -8,7 +8,7 @@ const HorizontalCards = ({ data }) => {
         <Link
           to={`/${d.media_type}/details/${d.id}`}
           key={i}
-          className="min-w-[15%]  mr-5 mb-5 bg-[#040B29] rounded"
+          className="min-w-[15%] h-[45vh]  mr-5 mb-5 bg-[#040B29] rounded"
         >
           <img
             className="w-full h-[55%] object-cover"
@@ -17,7 +17,7 @@ const HorizontalCards = ({ data }) => {
             }`}
             alt=""
           />
-          <div className="p-3 text-white h-[45%] overflow-hidden">
+          <div className="p-3 text-white h-[45%] overflow-y-auto">
             <h1 className="text-lg font-semibold ">
               {d.name || d.title || d.original_name || d.original_title}
             </h1>
