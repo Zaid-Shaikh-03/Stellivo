@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { asyncloadmovie, removemovie } from "../store/actions/movieActions";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import {
+  Link,
+  Outlet,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import Loader from "./Loader";
 import HorizontalCards from "./partials/HorizontalCards";
 
@@ -27,7 +33,7 @@ const MovieDetails = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat ",
       }}
-      className="w-screen h-fit py-2 px-[10%]"
+      className="relative w-screen h-fit py-2 px-[10%]"
     >
       <nav className="w-full h-[7vh] text-zinc-100 flex items-center gap-10 text-2xl">
         <Link
@@ -148,6 +154,7 @@ const MovieDetails = () => {
           info.recommendations.length > 0 ? info.recommendations : info.similar
         }
       />
+      <Outlet />
     </div>
   ) : (
     <Loader />
