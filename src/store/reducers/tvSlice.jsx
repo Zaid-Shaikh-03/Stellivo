@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  Info: null,
+  info: null,
 };
 
 export const tvSlice = createSlice({
@@ -9,10 +9,10 @@ export const tvSlice = createSlice({
   initialState,
   reducers: {
     loadtv: (state, action) => {
-      state.Info = action.payload;
+      state.info = action.payload;
     },
     removetv: (state) => {
-      state.Info = null;
+      state.info = null;
     },
   },
 });
