@@ -27,9 +27,9 @@ const Header = ({ data }) => {
         </Link>
       </p>
       <p className="text-white">
-        <i class="text-yellow-500 ri-megaphone-fill"></i>{" "}
+        <i className="text-yellow-500 ri-megaphone-fill"></i>{" "}
         {data.release_date || "No Information"}
-        <i class="ml-5 text-yellow-500 ri-clapperboard-fill"></i>{" "}
+        <i className="ml-5 text-yellow-500 ri-clapperboard-fill"></i>{" "}
         {data.media_type.toUpperCase()}
       </p>
       <Link

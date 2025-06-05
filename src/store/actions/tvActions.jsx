@@ -21,7 +21,7 @@ export const asyncloadtv = (id) => async (dispatch, getState) => {
       watchproviders: watchproviders.data.results.IN,
     };
     dispatch(loadtv(theulimatedetails));
-    console.log(theulimatedetails);
+    // console.log(theulimatedetails);
   } catch (error) {
     console.error("Failed to fetch tv details:", error);
   }

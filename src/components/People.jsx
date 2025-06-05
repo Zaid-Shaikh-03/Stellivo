@@ -41,7 +41,7 @@ const People = () => {
   useEffect(() => {
     refershHandler();
   }, []);
-  console.log(person);
+  // console.log(person);
 
   return person.length > 0 ? (
     <div className="w-screen  h-screen ">
@@ -49,7 +49,7 @@ const People = () => {
         <h1 className="text-2xl text-zinc-400 font-semibold">
           <i
             onClick={() => navigate(-1)}
-            class="ri-arrow-left-line text-zinc-400  text-2xl mr-2 hover:text-[#483AA0]"
+            className="ri-arrow-left-line text-zinc-400  text-2xl mr-2 hover:text-[#483AA0]"
           ></i>
           People
         </h1>

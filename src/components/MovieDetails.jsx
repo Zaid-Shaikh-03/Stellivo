@@ -17,7 +17,7 @@ const MovieDetails = () => {
   const { id } = useParams();
   const { info } = useSelector((state) => state.movie);
   const dispatch = useDispatch();
-  console.log(info);
+  // console.log(info);
   useEffect(() => {
     dispatch(asyncloadmovie(id));
     return () => {
@@ -38,16 +38,16 @@ const MovieDetails = () => {
       <nav className="w-full h-[7vh] text-zinc-100 flex items-center gap-10 text-2xl">
         <Link
           onClick={() => navigate(-1)}
-          class="ri-arrow-left-line text-zinc-400  text-2xl mr-2 hover:text-[#483AA0]"
+          className="ri-arrow-left-line text-zinc-400  text-2xl mr-2 hover:text-[#483AA0]"
         ></Link>
         <a target="_blank" href={info.details.homepage}>
-          <i class="ri-external-link-fill"></i>
+          <i className="ri-external-link-fill"></i>
         </a>
         <a
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
         >
-          <i class="ri-earth-fill"></i>
+          <i className="ri-earth-fill"></i>
         </a>
         <a
           target="_blank"
@@ -98,7 +98,7 @@ const MovieDetails = () => {
             to={`${pathname}/trailer`}
             className="py-3 px-6 bg-[#483AA0] text-white rounded-md hover:bg-[#5a3bb1]"
           >
-            <i class="text-xl mr-3 ri-play-fill"></i>
+            <i className="text-xl mr-3 ri-play-fill"></i>
             Play Trailer
           </Link>
         </div>
