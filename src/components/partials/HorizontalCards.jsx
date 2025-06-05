@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import noimage from "/noimage.webp";
 
 const HorizontalCards = ({ data }) => {
   return (
@@ -13,9 +14,9 @@ const HorizontalCards = ({ data }) => {
           >
             <img
               className="w-full h-[55%] object-cover"
-              src={`https://image.tmdb.org/t/p/original/${
+              src={d.backdrop_path || d.poster_path ?`https://image.tmdb.org/t/p/original/${
                 d.backdrop_path || d.poster_path
-              }`}
+              }`:noimage}
               alt=""
             />
             <div className="p-3 text-white h-[45%] overflow-y-auto">
