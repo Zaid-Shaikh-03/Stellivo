@@ -5,8 +5,8 @@ const Sidebar = () => {
   return (
     <div className="w-[20%] h-full border-r-2 border-zinc-400 p-5">
       <h1 className="text-2xl flex justify-center items-center gap-2 font-bold">
-        <img className="w-8 h-8" src="icon.svg"></img>
-        <span className="  text-white">Movies Website</span>
+        <img className="w-12 h-8" src="Logo12.png"></img>
+        <span className="  text-white text-4xl">Stellivo</span>
       </h1>
 
       <nav className="flex flex-col text-zinc-400 text-xl gap-3">
