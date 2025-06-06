@@ -25,7 +25,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [Visit Live Site]([https://yourdomain.com](https://stellivo-zaid-shaikh-03s-projects.vercel.app/)) 
+🔗 [Visit Live Site]  [Stellivo](https://stellivo-zaid-shaikh-03s-projects.vercel.app/)
 
 ---
 
