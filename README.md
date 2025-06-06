@@ -41,6 +41,6 @@ npm run dev
 ## Environment Variables
 Create a .env file in the root:
 ```ini
-VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_API_KEY=your_tmdb_api_key
 ```
 
